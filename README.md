@@ -1,5 +1,4 @@
 # Repository for Class Projects of Team 4
-=========================
 
 ## Team Members
 - Daniel 		-  d.mullerjones@gmail.com		- 1	(ScrumMaster)
