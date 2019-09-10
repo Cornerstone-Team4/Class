@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #outer{
+            display:grid;
+            grid-template-columns: 150px minmax(850px, auto);
+            grid-template-rows: repeat(6, 100px);
+            grid-gap: 10px;
+            grid-template-areas: "header header header"
+                                "nav main contact"
+                                "nav main contact"
+                                "nav main contact"
+                                "nav main contact"
+                                "footer footer footer";
+              text-align:center;                  
+        }
+        #inner1{
+            grid-area: header;
+        } 
+        #inner2, #inner3,#inner4, #inner5{
+            grid-area: nav;
+        }
+        #inner6{
+            grid-area:main;
+        }
+        #inner7{
+            grid-area:contact;
+        }
+        #inner8{
+            grid-area:footer;
+        }
+        #outer div:nth-child(even){
+            background-color:skyblue;
+            
+            border:1px solid black;
+        }
+        #outer div:nth-child(odd){
+            background-color:rgb(211, 210, 210);
+           
+            border:1px solid black;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="outer">
+    <div id="inner1">TITLE</div>
+    <div id="inner2">menu1</div>
+    <div id="inner3">menu2</div>
+    <div id="inner4">menu3</div>
+    <div id="inner5">menu4</div>
+    <div id="inner6">MAIN</div>
+    <div id="inner7">CONTACT</div>
+    <div id="inner8">FOOTER</div>
+    </div>
+</body>
+</html>
