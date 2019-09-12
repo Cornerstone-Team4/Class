@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/lab.css" type="text/css">
+</head>
+<body>
+    <div id="everythingBox">
+        
+        <!-- Calc Box Thingy-->
+        <div id="calcBox">
+            <h3>1st number: 
+                <input type="text" id="firstNumberCalc"/>
+            </h3>    
+            <h3>2nd number: 
+                <input type="text" id="secondNumberCalc"/>
+            </h3>
+            <h2>
+                <button id="multiplyButton" onclick="clickMultiply()">Multiply</button>
+                <button id="divideButton" onclick="clickDivide()">Divide</button>
+            </h2>
+            <h1 id="outputCalc"></h1>
+        </div>
+
+        <!-- Conv Box Thingy-->
+        <div id="convBox">
+            <h3>Pounds: 
+                <input type="number" id="poundConv" oninput="weightConverterKg(this.value)"/>
+            </h3>    
+            <h3>Test: 
+                <input type="number" id="kgConv" oninput="weightConverterPounds(this.value)"/>
+            </h3>    
+            <h1 id="outputKgConv"></h1>
+            <h1 id="outputPoundsConv"></h1>
+        </div>
+
+        <!-- Array Box Thingy-->
+        <div id="arrayBox">
+            <h3 id="inputArray"> Durian, Figs, Blackberries, Elderberries, Apricots, Cherries, Grapefruit</h3>
+            <input type="button" onclick="sortPrompt()" value="Sort array">
+            <input type="button" onclick="reversePrompt()" value="Reverse array">
+            <h3 id="outputArray">Durian, Figs, Blackberries, Elderberries, Apricots, Cherries, Grapefruit</h3>
+        </div>
+    
+        <!-- Table Box Thingy-->
+        <div id="tableBox">
+            <input type="button" onclick="tablePrompt()" value="Generate Table">
+            <h3 id="outputTable"></h3>
+        </div>
+
+        <!-- Factorial Box Thingy-->
+        <div id="facBox">
+            <input type="button" onclick="facPrompt()" value="Factorial">
+            <h3 id="outputFac"></h3>
+        </div>
+
+    </div>
+    <script src="js/lab.js"></script>
+</body>
+</html>
+
+

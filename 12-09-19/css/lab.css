@@ -1,0 +1,55 @@
+body{
+    
+}
+
+#calcBox{
+    width: 300px;
+    height: 300px;
+    background-color: whitesmoke;
+    margin: 0;
+    border:1px solid black;
+    text-align: center;
+    float:left;
+}
+
+
+#convBox{
+    width: 300px;
+    height: 300px;
+    background-color: whitesmoke;
+    margin: 0;
+    border:1px solid black;
+    text-align: center;
+    float:left;
+}
+
+
+#arrayBox{
+    width: 300px;
+    height: 300px;
+    background-color: whitesmoke;
+    margin: 0;
+    border:1px solid black;
+    text-align: center;
+    float:left;
+}
+
+#tableBox{
+    width: 300px;
+    height: 300px;
+    background-color: whitesmoke;
+    margin: 0;
+    border:1px solid black;
+    text-align: center;
+    float:left;
+}
+
+#facBox{
+    width: 300px;
+    height: 300px;
+    background-color: whitesmoke;
+    margin: 0;
+    border:1px solid black;
+    text-align: center;
+    float:left;
+}
