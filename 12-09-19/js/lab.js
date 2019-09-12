@@ -66,11 +66,13 @@ function tablePrompt()
     document.getElementById("outputTable").innerHTML = outputTable;
 }
 
-function generateTable(){
-    var multiplier;
+function generateTable()
+{
+    var i;
     outputTable = "";
-    for (multiplier=1; multiplier <= 10; multiplier++) {
-        outputTable += tableNumber + "x" + multiplier + " = " + tableNumber*multiplier + "<br>";
+    for (i=1; i <= 10; i++) 
+    {
+        outputTable += tableNumber + "x" + i + " = " + tableNumber*i + "<br>";
     }
 }
 
