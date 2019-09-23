@@ -15,6 +15,7 @@ var inputPrompt;
 var inputYear;
 var inputMonth;
 var inputDay;
+var userName;
 
 //today variables
 var todayInput;
@@ -31,6 +32,7 @@ var outputWeekday;
     Process
 */
 
+userName = prompt("Hello, what's your name?"); 
 inputPrompt = promptInput();
 todayInput = todayInput();
 
@@ -50,6 +52,7 @@ outputLeapYears = calcLeapYearsFromDay1(todayYear) - calcLeapYearsFromDay1(input
 outputWeekday = checkWeekday(inputYear, inputMonth, inputDay);
 
 //show on screen
+document.getElementById("outputName").innerHTML = "Hi " + userName + ", how is it going?";
 document.getElementById("outputDate").innerHTML = "The date in question was " + outputDays + " days ago.";
 document.getElementById("outputLeapYears").innerHTML = "It has been " + outputLeapYears + " leap years since that.";
 document.getElementById("outputWeekday").innerHTML = "The date in question was a " + outputWeekday + ".";
