@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Selection Sort</title>
+    <title>Sorting Methods</title>
 </head>
 <body>
     <h2 id="header">The array in question is:</h2>
-    <h1 id="arrayInput">[1,9,4,5,16,7,33]</h1>
+    <h1 id="arrayInput"></h1>
+    <button onclick="inputPrompt()">Change input array</button>
     <button onclick="onClickSelection()">Selection Sort!</button>
-    <h2 id="arrayOutput">[1,9,4,5,16,7,33]</h2>
+    <button onclick="onClickMerge()">Merge Sort!</button>
+    <h2 id="arrayOutput"></h2>
 
+    <h3><br>Remember to view the console for step-by-step process!</h3>
+    <script src="js/inputAndRefresh.js"></script>
+    <script src="js/mergeSort.js"></script>
     <script src="js/selectionSort.js"></script>
 </body>
 </html>

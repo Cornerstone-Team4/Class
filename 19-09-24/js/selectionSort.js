@@ -1,5 +1,3 @@
-var inputArray = [1,9,4,5,16,7,33];
-
 function compareNumbersInTheArray(array, startIndex)
 {
     var comparingNum = 10000;
@@ -42,11 +40,6 @@ function selectionSort(array)
 }
 
 function onClickSelection(){
-    var output = selectionSort(inputArray);
-    document.getElementById("arrayOutput").innerHTML = ("["+output+"]");    
+    refreshScreen(selectionSort(inputArray));
+        
 }
-//var output = compareNumbersInTheArray(inputArray, 0, inputArray.length);
-/*
-console.log(inputArray);
-swapNumbersInTheArray(inputArray, 2, 3);
-console.log(inputArray);*/
