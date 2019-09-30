@@ -1,6 +1,6 @@
-function compareNumbersInTheArray(array, startIndex)
+function selectionCompareNumbersInTheArray(array, startIndex)
 {
-    var comparingNum = 10000;
+    var comparingNum = Infinity;
     var comparingInd = 0;
 
     for(var i=startIndex; i<=array.length; i++)
@@ -31,7 +31,7 @@ function selectionSort(array)
     for(var j=0; j<outputSelection.length; j++)
     {
         console.log("loop outside: "+j);
-        var auxSort = compareNumbersInTheArray(outputSelection, j);
+        var auxSort = selectionCompareNumbersInTheArray(outputSelection, j);
         if(auxSort.index != j){
             swapNumbersInTheArray(outputSelection, auxSort.index, j);
         }
